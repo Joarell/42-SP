@@ -1,0 +1,9 @@
+#!/bin/sh
+touch .gitignore
+echo |find * . >> .gitignore
+git ls-files --others -i --exclude-standard | find * .
+
+
+
+
+
